@@ -9,8 +9,8 @@ namespace WpfApp2
         {
             InitializeComponent();
 
-            // Устанавливаем контекст данных
             DataContext = new MainViewModel();
         }
     }
+
 }
