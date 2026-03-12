@@ -21,8 +21,6 @@ namespace WpfApp2
                 }
             }
         }
-
-        // Команда для изменения значения через ViewModel
         private RelayCommand _changeTextCommand;
         public RelayCommand ChangeTextCommand
         {
@@ -40,4 +38,5 @@ namespace WpfApp2
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
+
 }
