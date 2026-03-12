@@ -17,14 +17,13 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- Заголовок -->
         <TextBlock Text="Двусторонняя привязка данных в WPF" 
                    FontSize="16" 
                    FontWeight="Bold" 
                    Margin="0,0,0,20"
                    HorizontalAlignment="Center"/>
 
-        <!-- Текстовое поле с привязкой -->
+
         <StackPanel Grid.Row="1" Margin="0,0,0,15">
             <TextBlock Text="Введите текст:" Margin="0,0,0,5"/>
             <TextBox x:Name="InputTextBox" 
@@ -34,7 +33,6 @@
                      Padding="5"/>
         </StackPanel>
 
-        <!-- Отображение текущего значения -->
         <StackPanel Grid.Row="2" Margin="0,0,0,15">
             <TextBlock Text="Текущее значение в ViewModel:" Margin="0,0,0,5"/>
             <Border BorderBrush="Gray" 
@@ -48,7 +46,7 @@
             </Border>
         </StackPanel>
 
-        <!-- Кнопка для изменения через ViewModel -->
+
         <Button Grid.Row="3" 
                 Content="Изменить через ViewModel" 
                 Command="{Binding ChangeTextCommand}"
@@ -57,4 +55,5 @@
                 HorizontalAlignment="Center"
                 Width="200"/>
     </Grid>
+
 </Window>
